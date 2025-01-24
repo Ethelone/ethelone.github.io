@@ -1,3 +1,5 @@
+import { TechStacks } from "./tech_stack";
+
 export function ResumeItem(company, location, position, date_in, date_out, description, stacks){
     return (
         <div className="card p-[1.5vw]">
@@ -117,7 +119,7 @@ export function Resume() {
             Education
         </h3>
     </div>
-    <div className="pb-[10vw]">
+    <div className="pb-[5vw]">
         <div className="flex-col bg-secondary-dark w-[75vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
             {ResumeEducation(
                 "Universitas Indonesia",
@@ -125,6 +127,17 @@ export function Resume() {
                 "Bachelor of Science in Computer Science (B.Sc. CS)", 
                 "Software Engineering, Web development, Data Science, Machine Learning, Advanced Database"
             )}
+        </div>
+    </div>
+
+    <div className="flex-col bg-background-dark w-[75vw] mx-auto text-[1.3vw]">   
+        <h3 className="text-[1.5vw] md:text-[1.8rem] pb-[1vw] text-left text-text-dark">
+            Current Stacks
+        </h3>
+    </div>
+    <div className="pb-[10vw]">
+        <div className="flex-col bg-secondary-dark w-[75vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
+            <TechStacks/>
         </div>
     </div>
     </>
