@@ -1,7 +1,7 @@
 export function CodeIntroduction() {
 	return (
     <div>
-        <h1 className="flex justify-center text-[5vw] md:text-[3rem] pt-[10vw] pb-[5vw] font-bold text-center text-white">
+        <h1 className="flex justify-center text-[5vw] md:text-[3rem] pt-[5vw] pb-[5vw] font-bold text-center text-text-dark">
             <span className="text-accent-3-dark">#</span>
             Raden Abdul Aziz Rahmat
             {/* <span className="text-[#F1D70A]">&nbsp;| Ethelone</span> */}

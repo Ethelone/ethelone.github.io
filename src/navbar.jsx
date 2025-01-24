@@ -1,8 +1,8 @@
 export function Navbar({ activeSection, setActiveSection }) {
 	return (
-	  <div className="btm-nav text-text-dark">
+	  <div className="btm-nav text-text-dark bg-primary-dark">
 		<button
-		  className={activeSection === "about" ? "active border-t-2 border-accent-2-dark" : ""}
+		  className={activeSection === "about" ? "active border-t-2 border-accent-2-dark bg-secondary-dark" : ""}
 		  onClick={() => setActiveSection("about")}
 		>
 			<svg
@@ -20,7 +20,7 @@ export function Navbar({ activeSection, setActiveSection }) {
 		  <span className="btm-nav-label">About</span>
 		</button>
 		<button
-		  className={activeSection === "resume" ? "active border-t-2 border-accent-2-dark" : ""}
+		  className={activeSection === "resume" ? "active border-t-2 border-accent-2-dark bg-secondary-dark" : ""}
 		  onClick={() => setActiveSection("resume")}
 		>
 			<svg
@@ -45,7 +45,7 @@ export function Navbar({ activeSection, setActiveSection }) {
 		  <span className="btm-nav-label">Resume</span>
 		</button>
 		<button
-		  className={activeSection === "portfolio" ? "active border-t-2 border-accent-2-dark" : ""}
+		  className={activeSection === "portfolio" ? "active border-t-2 border-accent-2-dark bg-secondary-dark" : ""}
 		  onClick={() => setActiveSection("portfolio")}
 		>
 			<svg

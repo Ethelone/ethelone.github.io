@@ -1,6 +1,7 @@
  import { CodeIntroduction } from "./introduction"; 
  import { Navbar } from "./navbar";
  import { useState } from "react";
+ import { Resume } from "./resume";
  
  export default function App() {
 	const [isLight, setisLight] = useState(false);
@@ -16,7 +17,7 @@
 	  };
 
 	return (
-	  <div className="bg-background-dark min-h-screen">
+	  <div className="bg-background-dark min-h-screen font-code">
 		{activeSection === "about" && (
 		  <section id="about">
 			<CodeIntroduction />
@@ -24,7 +25,7 @@
 		)}
 		{activeSection === "resume" && (
 		  <section id="resume">
-			<h1 className="flex justify-center text-[5vw]">Yeet</h1>
+			<Resume/>
 		  </section>
 		)}
 		{activeSection === "portfolio" && (
