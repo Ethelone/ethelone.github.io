@@ -1,13 +1,13 @@
 export function CodeIntroduction() {
 	return (
-    <div>
+    <div className="pb-[10vw]">
         {/* <h1 className="flex justify-center text-[5vw] md:text-[3rem] pt-[5vw] pb-[5vw] font-bold text-center text-text-dark"> */}
-        <div className="avatar flex justify-center pt-[5vw] pb-[5vw]">
-            <div className="w-64 rounded-full ring-accent-3-dark ring ring-offset-base-100 ring-offset-2">
+        <div className="avatar flex justify-center pt-[4vw] pb-[4vw]">
+            <div className="w-[14vw] rounded-full ring-accent-3-dark ring ring-offset-base-100 ring-offset-2">
                 <img src="/pp.jpg" />
             </div>
         </div>
-	    <div className="mockup-code w-[75vw] mx-auto text-[1.3vw] leading-[2.2rem] text-text-dark">
+	    <div className="mockup-code w-[75vw] mx-auto text-[1vw] leading-[2rem] text-text-dark">
             <pre data-prefix="$">
                 <code>Hello, my name is <span className="text-accent-2-dark">Raden Abdul Aziz Rahmat. </span> 
                 You can call me <span className="text-accent-1-dark">Aziz.</span>

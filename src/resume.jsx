@@ -2,7 +2,7 @@ import { TechStacks } from "./tech_stack";
 
 export function ResumeItem(company, location, position, date_in, date_out, description, stacks){
     return (
-        <div className="card p-[1.5vw]">
+        <div className="card p-[1.5vw] text-[1vw] md:text-[1rem]">
             <div className="flex justify-between">
             <span className="text-left font-bold text-accent-2-dark">{company},&nbsp; 
                 <span className="text-accent-2-dark font-normal italic">{location}</span>
@@ -20,7 +20,7 @@ export function ResumeItem(company, location, position, date_in, date_out, descr
 
 export function ResumeEducation(college, location, degree, courses){
     return (
-        <div className="card p-[1.5vw]">
+        <div className="card p-[1.5vw] text-[1vw] md:text-[1rem]">
             <div className="flex justify-between">
             <span className="text-left font-bold text-accent-2-dark">{college},&nbsp; 
                 <span className="text-accent-2-dark font-normal italic">{location}</span>
@@ -36,21 +36,21 @@ export function ResumeEducation(college, location, degree, courses){
 export function Resume() {
 	return (
     <>
-    <h1 className="flex justify-center text-[5vw] md:text-[3rem] pt-[5vw] font-bold text-center text-text-dark">
+    <h1 className="flex justify-center text-[4vw] md:text-[2.5rem] pt-[4vw] font-bold text-center text-text-dark">
         Raden Abdul Aziz Rahmat
     </h1>
-    <div className="divider bg-accent-2-dark h-[2px] w-[60%] mx-auto my-[2vw]"></div>
-    <h2 className="flex justify-center text-[1.5vw] md:text-[1.8rem] pb-[5vw] text-center text-accent-1-dark">
+    <div className="divider bg-accent-2-dark h-[2px] w-[60%] mx-auto my-[0.5vw]"></div>
+    <h2 className="flex justify-center text-[1.5vw] md:text-[1.8rem] pb-[4vw] text-center text-accent-1-dark">
         Software Engineer
     </h2>
 
-    <div className="flex-col bg-background-dark w-[75vw] mx-auto text-[1.3vw]">   
-        <h3 className="text-[1.5vw] md:text-[1.8rem] pb-[1vw] text-left text-text-dark">
+    <div className="flex-col bg-background-dark w-[60vw] mx-auto text-[1.3vw]">   
+        <h3 className="text-[1.3vw] md:text-[1.5rem] pb-[1vw] text-left text-text-dark">
             Work Experience
         </h3>
     </div>
-    <div className="pb-[5vw]">
-        <div className="flex-col bg-secondary-dark w-[75vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
+    <div className="pb-[4vw]">
+        <div className="flex-col bg-secondary-dark w-[60vw] mx-auto text-text-dark rounded-md">
             {ResumeItem(
                 "PT. Pos Indonesia (Persero)",
                 "Bandung", 
@@ -113,14 +113,13 @@ export function Resume() {
         </div>
     </div>
 
-
-    <div className="flex-col bg-background-dark w-[75vw] mx-auto text-[1.3vw]">   
-        <h3 className="text-[1.5vw] md:text-[1.8rem] pb-[1vw] text-left text-text-dark">
+    <div className="flex-col bg-background-dark w-[60vw] mx-auto text-[1.3vw]">   
+        <h3 className="text-[1.3vw] md:text-[1.5rem] pb-[1vw] text-left text-text-dark">
             Education
         </h3>
     </div>
-    <div className="pb-[5vw]">
-        <div className="flex-col bg-secondary-dark w-[75vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
+    <div className="pb-[4vw]">
+        <div className="flex-col bg-secondary-dark w-[60vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
             {ResumeEducation(
                 "Universitas Indonesia",
                 "Jakarta", 
@@ -130,13 +129,13 @@ export function Resume() {
         </div>
     </div>
 
-    <div className="flex-col bg-background-dark w-[75vw] mx-auto text-[1.3vw]">   
+    <div className="flex-col bg-background-dark w-[60vw] mx-auto text-[1.3vw]">   
         <h3 className="text-[1.5vw] md:text-[1.8rem] pb-[1vw] text-left text-text-dark">
             Current Stacks
         </h3>
     </div>
     <div className="pb-[10vw]">
-        <div className="flex-col bg-secondary-dark w-[75vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
+        <div className="flex-col bg-secondary-dark w-[60vw] mx-auto text-[1.3vw] text-text-dark rounded-md">
             <TechStacks/>
         </div>
     </div>
